@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Dreams - Home</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="font-lato">
+
+    <header class="w-full">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <div class="flex flex-col items-center">
+                <img src="./assets/images/companylogo.png" alt="Electric Dreams Logo" class="logo-small">
+                <span class="logo-text text-secondary-orange font-semibold">Electric dreams</span>
+            </div>
+            <div class="m-4 items-center space-x-6">
+                <a href="tel:+911234567890" class="md:text-lg px-6 py-3 bg-primary-orange hover:bg-tertiary-orange text-white font-semibold rounded-full transition-colors duration-200 shadow-md">
+                    Call(+91)1234567890
+                </a>
+                <a href="#" class="md:text-lg py-3 btn-round-small border border-primary-orange text-primary-orange hover:bg-gray-50 font-semibold rounded-full transition-colors duration-200 bg-white">
+                    Book Now
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-secondary-orange py-2 px-4"> 
+            <div class="container mx-auto flex flex-row md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-8">
+                
+                <div class="relative md:w-64 order-1 md:order-none">
+                    <i class='bx bx-search text-gray-600 absolute left-3 top-1/2 -translate-y-1/2 rotate-90 text-xl'></i>
+                    <input type="text" placeholder="Search electricians" class="w-full font-bold pl-10 pr-4 py-2 rounded-full bg-white text-gray-800 focus:outline-none focus:ring-2 ring-focus-orange">
+                </div>
+                <nav class="py-3 order-2 md:order-none">
+                    <ul class="flex flex-wrap justify-center md:justify-between items-center text-white text-base font-semibold space-x-4 md:gap-3 sm:space-x-6">
+                        <li><a href="home.html" class="hover:text-gray-200 py-1">Home</a></li>
+                        <li><a href="services.html" class="hover:text-gray-200 py-1 flex items-center">Services <i class='bx bx-chevron-down text-lg ml-1'></i></a></li>
+                        <li><a href="emergency.html" class="hover:text-gray-200 py-1">Emergency electrician</a></li>
+                        <li><a href="about.html" class="hover:text-gray-200 py-1">About</a></li>
+                        <li><a href="contact.html" class="hover:text-gray-200 py-1">Contact</a></li>
+                        <li><a href="areas.html" class="hover:text-gray-200 py-1">Areas we services</a></li>
+                        <li><a href="account.html" class="hover:text-gray-200 py-1">Account</a></li>
+                        <li><a href="#" id="cartIcon" class="relative hover:text-gray-200 py-1 flex items-center">Cart<span class="text-primary-orange absolute -top-1 -right-4 inline-flex items-center justify-center h-4 w-4 text-xs font-bold bg-white rounded-full">1</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <div class="bg-contact-blue border-t border-1 py-12 text-white">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold mb-2">Contact Us</h1>
+            <p class="text-xl font-light">We'd love to hear from you.</p>
+        </div>
+    </div>
+
+    <main class="flex-grow container mx-auto px-2 py-12">
+        <div class="max-w-5xl mx-auto flex flex-col lg:flex-row gap-8">
+
+            <div class="w-full lg:w-2/5 space-y-6">
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    
+                    <div class="flex-1 w-full border border-gray-900 p-6 text-center shadow-sm">
+                        <div class="flex justify-center mb-3">
+                            <i class='bx bx-phone-call text-3xl px-2 border-4 border-gray-400'></i>
+                        </div>
+                        <p class="text-lg font-semibold text-gray-800 mb-1">Call out Team</p>
+                        <a href="tel:+911234567890" class="text-lg font-bold text-secondary-orange hover:underline">+91-1234567890</a>
+                    </div>
+
+                    <div class="flex-1 w-full border border-gray-900 p-6 text-center shadow-sm">
+                        <div class="flex justify-center mb-3">
+                            <i class='bx bx-envelope text-3xl px-2 border-4 border-gray-400'></i>
+                        </div>
+                        <p class="text-lg font-semibold text-gray-800 mb-1">Reach out to us</p>
+                        <p class="text-sm text-gray-600">Send email</p>
+                        <a href="mailto:support@electricdreams.com" class="text-base font-medium text-secondary-orange hover:underline">support@electricdreams.com</a>
+                    </div>
+                </div>
+
+                <div class="w-full border border-gray-900 overflow-hidden shadow-lg">
+                    <img src="./assets/images/IMG_20250619_191657_119.jpg" alt="Map of service area" class="w-full h-80 object-cover lg:h-96">
+                </div>
+
+            </div>
+
+            <div class="w-full lg:w-3/5 border border-gray-900 p-6 sm:p-8 shadow-lg">
+                <form class="space-y-6">
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label for="first-name" class="block text-sm font-medium text-gray-700">First Name</label>
+                            <input type="text" id="first-name" name="first-name" placeholder="First Name" required
+                                class="w-full mt-1 px-4 py-2 border-2 border-gray-600 rounded-lg shadow-sm focus:border-transparent form-input-contact">
+                        </div>
+                        <div>
+                            <label for="last-name" class="block text-sm font-medium text-gray-700">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required
+                                class="w-full mt-1 px-4 py-2 border-2 border-gray-600 rounded-lg shadow-sm focus:border-transparent form-input-contact">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label for="phone-number" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                            <input type="tel" id="phone-number" name="phone-number" placeholder="Phone number" required
+                                class="w-full mt-1 px-4 py-2 border-2 border-gray-600 rounded-lg shadow-sm focus:border-transparent form-input-contact">
+                        </div>
+                        <div>
+                            <label for="email-id" class="block text-sm font-medium text-gray-700">Email address</label>
+                            <input type="email" id="email-id" name="email-address" placeholder="Email id" required
+                                class="w-full mt-1 px-4 py-2 border-2 border-gray-600 rounded-lg shadow-sm focus:border-transparent form-input-contact">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="address" class="block text-sm font-medium text-gray-700">Address (Optional)</label>
+                        <input type="text" id="address" name="address" placeholder="Address"
+                            class="w-full mt-1 px-4 py-2 border-2 border-gray-600 rounded-lg shadow-sm focus:border-transparent form-input-contact">
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">How can we help?</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Type your message..." required
+                            class="w-full mt-1 px-4 py-2 border-2 border-gray-600 rounded-lg shadow-sm focus:border-transparent form-input-contact resize-y"></textarea>
+                    </div>
+
+                    <div class="pt-4 flex justify-center">
+                        <button type="submit" 
+                            class="border btn-large-orange rounded-full bg-primary-orange hover:bg-white hover:text-black hover:border-1 hover:border-black text-white font-semibold shadow-md transition duration-150 ease-in-out w-full sm:w-auto h-auto">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="mx-auto w-full bg-secondary-orange pb-12 text-white mt-8">
+    <div class="container mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"> 
+            
+            <div class="sm:mx-0"> <div class="flex flex-col items-start mt-4 mb-6">
+                    <img src="./assets/images/companylogo.png" alt="Electric Dreams Logo" class="footer-logo">
+                    <span class="logo-text text-white font-semibold">Electric dreams</span>
+                </div>
+                <p class="sm:text-xs md:text-sm font-bold leading-relaxed">Voltaic: Electrical provides expert residential, commercial, and emergency electrical services across Perth.</p>
+                <div class="flex space-x-3 mt-2 text-2xl">
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-google'></i></a>
+                </div>
+            </div>
+            
+            <div class="sm:mx-0"> <h3 class="font-semibold sm:text-sm md:text-lg mt-6 mb-4">Services</h3>
+                <ul class="space-y-0 sm:text-xs md:text-sm font-bold">
+                    <li><a class="hover:underline hover:text-primary-orange">Lighting</a></li>
+                    <li><a class="hover:underline hover:text-primary-orange">Private Power Poles</a></li>
+                    <li><a class="hover:underline hover:-primary-orange">Smoke Alarms</a></li>
+                    <li><a href="#" class="hover:underline hover:text-primary-orange">EV Chargers</a></li>
+                    <li><a href="#" class="hover:underline hover:text-primary-orange">Air Conditioning</a></li>
+                    <li><a href="#" class="hover:underline hover:text-primary-orange">Thermographic Imaging</a></li>
+                    <li><a class="hover:underline hover:text-primary-orange">View All</a></li>
+                </ul>
+            </div>
+            
+            <div class="sm:mx-0"> <h3 class="font-semibold sm:text-sm md:text-lg mt-6 mb-4">Company</h3>
+                <ul class="space-y-0 sm:text-xs md:text-sm font-bold">
+                    <li><a class="hover:underline hover:text-primary-orange">About</a></li>
+                    <li><a class="hover:underline hover:text-primary-orange">Service Areas</a></li>
+                    <li><a class="hover:underline hover:text-primary-orange">Contact</a></li>
+                    <li><a class="hover:underline hover:text-primary-orange">Reviews</a></li>
+                    <li><a class="hover:underline hover:text-primary-orange">Resources</a></li>
+                    <li><a class="hover:underline hover:text-primary-orange">Sitemap</a></li>
+                </ul>
+            </div>
+            
+            <div class="sm:mx-0"> <h3 class="font-semibold sm:text-sm md:text-lg mt-6 mb-4">Get In Touch</h3>
+                <ul class="space-y-0 sm:text-xs md:text-sm font-bold">
+                    <li class="flex items-center"><i class='bx bx-map sm:text-lg md:text-xl mr-2'></i> Location, Chennai</li>
+                    <li class="flex items-center"><i class='bx bx-phone sm:text-lg md:text-xl mr-2'></i> (+91)1234567890</li>
+                    <li class="flex items-center"><i class='bx bx-envelope sm:text-lg md:text-xl mr-2'></i> Support @electricdreams.com</li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+<div id="cartModal" class="fixed inset-0 bg-gray-900 bg-opacity-30 flex justify-end z-50 hidden">
+    <div class="bg-white shadow-xl max-w-sm w-full mt-2 mr-4 rounded-3xl max-h-[90vh]">
+        
+        <div class="p-4 flex justify-between items-center sticky top-0 bg-white z-10">
+            <h2 class="text-lg font-bold text-gray-900">Cart</h2>
+            <button id="cartCloseButton" type="button" class="text-gray-500 hover:text-gray-700 p-1">
+                <i class='bx bx-x'></i>
+            </button>
+        </div>
+
+        <div class="p-4"> 
+            <p class="text-lg mb-2">Bulb/tubelight holder installation</p>
+            
+            <div class="flex gap-4 items-center mb-3">
+                <p class="text-lg">Add</p>
+                <div class="flex items-center border border-gray-300 rounded-md overflow-hidden">
+                    
+                    <button id="qtyMinus" type="button" class="w-7 h-7 bg-gray-300 hover:bg-gray-200 text-gray-700 text-md font-semibold flex items-center justify-center">-</button>
+                    <span id="qtyDisplay" class="w-7 h-7 text-center bg-gray-300 text-gray-900 flex items-center justify-center text-sm">1</span>
+                    <button id="qtyPlus" type="button" class="w-7 h-7 bg-gray-300 hover:bg-gray-200 text-gray-700 text-md font-semibold flex items-center justify-center">+</button>
+                </div>
+            </div>
+                
+                <div class="mb-2">
+                    <span class="text-sm text-gray-600 mr-1">Amount:</span>
+                    <span id="totalAmount" class="text-md font-bold text-gray-900">₹109</span>
+                </div>
+            
+
+            <div class="bg-orange-300 text-xs text-gray-700 text-center p-1 mb-4">
+                Add ₹<span id="amountRemaining">92</span> more to save on visitation fees
+            </div>
+
+            <button type="submit" class="w-full text-center py-2 rounded-full bg-secondary-orange hover:bg-white border hover:border-black hover:text-black  text-white font-semibold text-md shadow-md transition duration-150 ease-in-out"><a href="checkout.html" id="bookNowButton">
+                Book now
+            </a></button>
+        </div>
+
+        <div class="p-4 border-t border-gray-200">
+            <div class="flex border-2 border-black rounded-2xl p-2 items-start space-x-2">
+                <div class="flex-shrink-0 mt-1">
+                    <i class='bxr bx-discount'></i> 
+                </div>
+                <div>
+                    <p class="text-lg font-medium">Get visitation fees offer</p>
+                    <p class="text-sm mb-1">On orders above ₹200</p>
+                    <a id="viewOffersButton" href="#" class="text-xs text-orange-500 hover:text-gray-900 hover:bg-white hover:border-black border-transparent border transition duration-200">
+                        View more offers
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-4 border-t border-gray-200">
+            <div class="border-2 border-black rounded-2xl p-3">
+                <p class="font-semibold text-lg text-center mb-1">UC promise</p>
+                <ul class="text-xs text-gray-700 space-y-0.5">
+                    <li>✔ Verified professionals</li>
+                    <li>✔ Hassle free booking</li>
+                    <li>✔ Transparent pricing</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="./js/script.js"></script>
+</body>
+</html>

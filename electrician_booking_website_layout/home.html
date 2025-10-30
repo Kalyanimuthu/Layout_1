@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Dreams - Home</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="font-lato bg-white">
+
+    <header class="w-full">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <div class="flex flex-col items-center">
+                <img src="./assets/images/companylogo.png" alt="Electric Dreams Logo" class="logo-small">
+                <span class="logo-text text-secondary-orange font-semibold">Electric dreams</span>
+            </div>
+            <div class="m-4 items-center space-x-6">
+                <a href="tel:+911234567890" class="md:text-lg px-6 py-3 bg-primary-orange hover:bg-tertiary-orange text-white font-semibold rounded-full transition-colors duration-200 shadow-md">
+                    Call(+91)1234567890
+                </a>
+                <a href="#" class="md:text-lg py-3 btn-round-small border border-primary-orange text-primary-orange hover:bg-gray-50 font-semibold rounded-full transition-colors duration-200 bg-white">
+                    Book Now
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-secondary-orange py-2 px-4"> 
+            <div class="container mx-auto flex flex-row md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-8">
+                
+                <div class="relative md:w-64 order-1 md:order-none">
+                    <i class='bx bx-search text-gray-600 absolute left-3 top-1/2 -translate-y-1/2 rotate-90 text-xl'></i>
+                    <input type="text" placeholder="Search electricians" class="w-full font-bold pl-10 pr-4 py-2 rounded-full bg-white text-gray-800 focus:outline-none focus:ring-2 ring-focus-orange">
+                </div>
+                <nav class="py-3 order-2 md:order-none">
+                    <ul class="flex flex-wrap justify-center md:justify-between items-center text-white text-base font-semibold space-x-4 md:gap-3 sm:space-x-6">
+                        <li><a href="home.html" class="hover:text-gray-200 py-1">Home</a></li>
+                        
+                        <li><a href="services.html" class="hover:text-gray-200 py-1 flex items-center">Services <i class='bx bx-chevron-down text-lg ml-1'></i></a></li>
+                        <li><a href="emergency.html" class="hover:text-gray-200 py-1">Emergency electrician</a></li>
+                        <li><a href="about.html" class="hover:text-gray-200 py-1">About</a></li>
+                        <li><a href="contact.html" class="hover:text-gray-200 py-1">Contact</a></li>
+                        <li><a href="areas.html" class="hover:text-gray-200 py-1">Areas we services</a></li>
+                        <li><a href="account.html" class="hover:text-gray-200 py-1">Account</a></li>
+                        <li><a href="#" id="cartIcon" class="relative hover:text-gray-200 py-1 flex items-center">Cart<span class="text-primary-orange absolute -top-1 -right-4 inline-flex items-center justify-center h-4 w-4 text-xs font-bold bg-white rounded-full">1</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-fluid">
+        <div class="mt-12">
+            <div class="relative max-w-5xl mx-auto bg-contact-blue overflow-hidden"> 
+                <div class="hero-image-container flex justify-center w-full">
+                    <img src="./assets/images/Rectangle43.png" alt="Trusted Electricians Team" class="relative max-w-full h-auto z-20" style="max-height: 400px; object-fit: cover;">
+                </div>
+            </div>
+
+            <div class="max-w-5xl mx-auto opacity-90 dark-text-block -mt-16 relative z-30">
+                <h2 class="text-2xl font-bold text-primary-orange mb-4">
+                    Your Trusted Experts for All Things Electrical
+                </h2>
+                <p class="text-lg font-light max-w-3xl mx-auto">
+                    From residential upgrades to large-scale commercial projects, we deliver expert service, quality workmanship, and reliable results.
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-12 text-center">
+            <h2 class="text-2xl font-bold text-gray-800">Our Services</h2>
+            <p class="text-gray-600 mt-2">Explore our full range of electrical solutions tailored to your needs.</p>
+        </div>
+
+
+    <div class="w-full py-10">
+
+        <div class="relative w-full overflow-hidden hide-scroll-bar">  
+            <div id="service-marquee" class="flex pb-10 space-x-6 px-4">
+                
+                <div class="p-5 flex-shrink-0 w-80 bg-contact-blue p-4 rounded-lg shadow-xl border border-gray-200 hover:shadow-2xl transition duration-300">
+                    <a href="lighting.html" class="block">
+                        <img src="./assets/images/lighting-installation.jpg" alt="Electrician installing lighting" class="w-full h-48 object-cover mb-4">
+                        <div class="bg-contact-blue flex justify-between items-center text-white">
+                            <div>
+                                <h3 class="font-bold text-lg">Lighting installation</h3>
+                                <p class="text-sm">Energy-efficient lighting solutions for your home or business.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="p-5 flex-shrink-0 w-80 bg-contact-blue p-4 rounded-lg shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition duration-300">
+                    <a href="#" class="block">
+                        <img src="./assets/images/commercial-electrician.jpg" alt="Commercial electrician in vest" class="w-full h-48 object-cover mb-4">
+                        <div class="bg-contact-blue flex justify-between items-center text-white">
+                            <div>
+                                <h3 class="font-bold text-lg">Commercial electrician</h3>
+                                <p class="text-sm">Specializes in installing, maintaining, and repairing</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-5 flex-shrink-0 w-80 bg-contact-blue p-4 rounded-lg shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition duration-300">
+                    <a href="#" class="block">
+                        <img src="./assets/images/commercial-lighting.jpg" alt="Commercial indoor lighting" class="w-full h-48 object-cover mb-4">
+                        <div class="bg-contact-blue flex justify-between items-center text-white">
+                            <div>
+                                <h3 class="font-bold text-lg">Commercial lighting</h3>
+                                <p class="text-sm">Encompasses various illumination systems designed for functionality</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-5 flex-shrink-0 w-80 bg-contact-blue p-4 rounded-lg shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition duration-300">
+                    <a href="#" class="block">
+                        <img src="./assets/images/switchboard-work.jpg" alt="Electrician checking switchboard" class="w-full h-48 object-cover mb-4">
+                        <div class="bg-contact-blue flex justify-between items-center text-white">
+                            <div>
+                                <h3 class="font-bold text-lg">Switchboard</h3>
+                                <p class="text-sm">Troubleshooting electrical faults, replacing damaged components</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-5 flex-shrink-0 w-80 bg-contact-blue p-4 rounded-lg shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition duration-300">
+                    <a href="#" class="block">
+                        <img src="./assets/images/testing-tagging.jpg" alt="Electrician performing testing and tagging" class="w-full h-48 object-cover mb-4">
+                        <div class="bg-contact-blue flex justify-between items-center text-white">
+                            <div>
+                                <h3 class="font-bold text-lg">Electrical testing & tagging</h3>
+                                <p class="text-sm">Safe for use by inspecting, testing, and labeling it with the results</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="p-5 flex-shrink-0 w-80 bg-contact-blue p-4 rounded-lg shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition duration-300">
+                    <a href="#" class="block">
+                        <img src="./assets/images/electrical-maintenance.jpg" alt="Electrician maintaining electrical system" class="w-full h-48 object-cover mb-4">
+                        <div class="bg-contact-blue flex justify-between items-center text-white">
+                            <div>
+                                <h3 class="font-bold text-lg">Electrical maintenance</h3>
+                                <p class="text-sm">Inspecting, testing, and repairing electrical systems and equipment</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="p-5 flex-shrink-0 w-80 bg-contact-blue p-4 rounded-lg shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition duration-300">
+                    <a href="#" class="block">
+                        <img src="./assets/images/electrical-safety-inspection.jpg" alt="Electrical safety inspection" class="w-full h-48 object-cover mb-4">
+                        <div class="bg-contact-blue flex justify-between items-center text-white">
+                            <div>
+                                <h3 class="font-bold text-lg">Electrical safety inspection</h3>
+                                <p class="text-sm">Assesses a property's electrical system to ensure it meets safety standards</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-5 flex-shrink-0 w-80 bg-contact-blue p-4 rounded-lg shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition duration-300">
+                    <a href="emergency.html" class="block">
+                        <img src="./assets/images/outdoor-security-lighting.jpg" alt="Outdoor security lighting" class="w-full h-48 object-cover mb-4">
+                        <div class="bg-contact-blue flex justify-between items-center text-white">
+                            <div>
+                                <h3 class="font-bold text-lg">Emergency & outdoor security lighting</h3>
+                                <p class="text-sm">Comprehensive security lighting solutions for property protection.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-5 flex-shrink-0 w-80 bg-contact-blue p-4 rounded-lg shadow-xl border border-gray-200 hover:shadow-2xl transition duration-300">
+                    <a href="lighting.html" class="block">
+                        <img src="./assets/images/lighting-installation.jpg" alt="Electrician installing lighting" class="w-full h-48 object-cover mb-4">
+                        <div class="bg-contact-blue flex justify-between items-center text-white">
+                            <div>
+                                <h3 class="font-bold text-lg">Lighting installation</h3>
+                                <p class="text-sm">Energy-efficient lighting solutions for your home or business.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="p-5 flex-shrink-0 w-80 bg-contact-blue p-4 rounded-lg shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition duration-300">
+                    <a href="#" class="block">
+                        <img src="./assets/images/commercial-electrician.jpg" alt="Commercial electrician in vest" class="w-full h-48 object-cover mb-4">
+                        <div class="bg-contact-blue flex justify-between items-center text-white">
+                            <div>
+                                <h3 class="font-bold text-lg">Commercial electrician</h3>
+                                <p class="text-sm">Specializes in installing, maintaining, and repairing</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-5 flex-shrink-0 w-80 bg-contact-blue p-4 rounded-lg shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition duration-300">
+                    <a href="#" class="block">
+                        <img src="./assets/images/commercial-lighting.jpg" alt="Commercial indoor lighting" class="w-full h-48 object-cover mb-4">
+                        <div class="bg-contact-blue flex justify-between items-center text-white">
+                            <div>
+                                <h3 class="font-bold text-lg">Commercial lighting</h3>
+                                <p class="text-sm">Encompasses various illumination systems designed for functionality</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-5 flex-shrink-0 w-80 bg-contact-blue p-4 rounded-lg shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition duration-300">
+                    <a href="#" class="block">
+                        <img src="./assets/images/switchboard-work.jpg" alt="Electrician checking switchboard" class="w-full h-48 object-cover mb-4">
+                        <div class="bg-contact-blue flex justify-between items-center text-white">
+                            <div>
+                                <h3 class="font-bold text-lg">Switchboard</h3>
+                                <p class="text-sm">Troubleshooting electrical faults, replacing damaged components</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-5 flex-shrink-0 w-80 bg-contact-blue p-4 rounded-lg shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition duration-300">
+                    <a href="#" class="block">
+                        <img src="./assets/images/testing-tagging.jpg" alt="Electrician performing testing and tagging" class="w-full h-48 object-cover mb-4">
+                        <div class="bg-contact-blue flex justify-between items-center text-white">
+                            <div>
+                                <h3 class="font-bold text-lg">Electrical testing & tagging</h3>
+                                <p class="text-sm">Safe for use by inspecting, testing, and labeling it with the results</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="p-5 flex-shrink-0 w-80 bg-contact-blue p-4 rounded-lg shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition duration-300">
+                    <a href="#" class="block">
+                        <img src="./assets/images/electrical-maintenance.jpg" alt="Electrician maintaining electrical system" class="w-full h-48 object-cover mb-4">
+                        <div class="bg-contact-blue flex justify-between items-center text-white">
+                            <div>
+                                <h3 class="font-bold text-lg">Electrical maintenance</h3>
+                                <p class="text-sm">Inspecting, testing, and repairing electrical systems and equipment</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="p-5 flex-shrink-0 w-80 bg-contact-blue p-4 rounded-lg shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition duration-300">
+                    <a href="#" class="block">
+                        <img src="./assets/images/electrical-safety-inspection.jpg" alt="Electrical safety inspection" class="w-full h-48 object-cover mb-4">
+                        <div class="bg-contact-blue flex justify-between items-center text-white">
+                            <div>
+                                <h3 class="font-bold text-lg">Electrical safety inspection</h3>
+                                <p class="text-sm">Assesses a property's electrical system to ensure it meets safety standards</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-5 flex-shrink-0 w-80 bg-contact-blue p-4 rounded-lg shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition duration-300">
+                    <a href="emergency.html" class="block">
+                        <img src="./assets/images/outdoor-security-lighting.jpg" alt="Outdoor security lighting" class="w-full h-48 object-cover mb-4">
+                        <div class="bg-contact-blue flex justify-between items-center text-white">
+                            <div>
+                                <h3 class="font-bold text-lg">Emergency & outdoor security lighting</h3>
+                                <p class="text-sm">Comprehensive security lighting solutions for property protection.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="flex justify-center mt-6">
+            <a href="services.html">
+                <button class="bg-primary-orange text-white px-10 py-2 mx-auto rounded-full">Services</button>
+            </a>
+        </div>
+    </div>
+
+<!-- why choose us -->
+ 
+<div>
+    <div>
+        <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center text-primary-orange">Why choose us?</h2>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+            
+            <div class="grid grid-cols-2">
+                <img src="./assets/images/electrician-collage.jpg" alt="Electricians working on electrical components" class="h-full object-cover shadow-xl">
+                <img src="./assets/images/electrician-collage1.jpg" alt="Electricians working on electrical components" class="h-full object-cover shadow-xl">
+                <img src="./assets/images/electrician-collage2.jpg" alt="Electricians working on electrical components" class="h-full object-cover shadow-xl">
+                <img src="./assets/images/electrician-collage3.jpg" alt="Electricians working on electrical components" class="h-full object-cover shadow-xl">
+            </div>
+            
+            <div class="bg-contact-blue p-8 shadow-lg text-white">
+                <p class="mb-8 text-lg font-medium">
+                    Our team is fully licensed and accredited, bringing extensive experience and recognised qualifications in electrical, solar, air conditioning, and more.
+                </p>
+                
+                <div class="grid grid-cols-2 gap-6">
+                    
+                    <div class="bg-white p-4 shadow-md text-gray-900">
+                        <div class="flex items-center space-x-2 mb-1">
+                            <i class='bx bx-zap text-2xl text-primary-orange'></i>
+                            <p class="text-3xl font-extrabold text-primary-blue">50+</p>
+                        </div>
+                        <h4 class="font-bold text-sm">Years of Industry Experience</h4>
+                        <p class="text-xs mt-1 text-gray-600">Combining decades of expertise to provide reliable, effective electrical solutions.</p>
+                    </div>
+                    
+                    <div class="bg-white p-4 shadow-md text-gray-900">
+                        <div class="flex items-center space-x-2 mb-1">
+                            <i class='bx bx-wrench text-2xl text-primary-orange'></i>
+                            <p class="text-3xl font-extrabold text-primary-blue">5000+</p>
+                        </div>
+                        <h4 class="font-bold text-sm">Projects Completed</h4>
+                        <p class="text-xs mt-1 text-gray-600">Reflecting the trust businesses and home owners place in us for ongoing electrical services.</p>
+                    </div>
+
+                    <div class="bg-white p-4 shadow-md text-gray-900">
+                        <div class="flex items-center space-x-2 mb-1">
+                            <i class='bx bx-like text-2xl text-primary-orange'></i>
+                            <p class="text-3xl font-extrabold text-primary-blue">98%</p>
+                        </div>
+                        <h4 class="font-bold text-sm">First-Time Fix Rate</h4>
+                        <p class="text-xs mt-1 text-gray-600">Proving our efficiency in diagnosing and resolving electrical issues on the first visit.</p>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-lg shadow-md text-gray-900">
+                        <div class="flex items-center space-x-2 mb-1">
+                            <i class='bx bx-dollar text-2xl text-primary-orange'></i>
+                            <p class="text-3xl font-extrabold text-primary-blue">$ 10M</p>
+                        </div>
+                        <h4 class="font-bold text-sm">Client Energy Savings</h4>
+                        <p class="text-xs mt-1 text-gray-600">Estimating the financial impact our solutions have had in reducing energy costs.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="py-16">
+    <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">Our Proven Three Step Process</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="p-6 border-2 border-primary-orange shadow-lg bg-white">
+                <span class="text-3xl text-center font-extrabold block mb-4">1</span>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Consultation & Assessment</h3>
+                <p class="text-sm text-gray-700">
+                    We begin by understanding your specific needs and goals. Our experts conduct a thorough assessment to recommend the best electrical solutions tailored to your requirements.
+                </p>
+            </div>
+
+            <div class="p-6 border-2 border-primary-orange shadow-lg bg-white">
+                <span class="text-3xl text-center font-extrabold block mb-4">2</span>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Detailed Quote</h3>
+                <p class="text-sm text-gray-700">
+                    After assessing your needs, we provide a clear, detailed proposal outlining the recommended approach, estimated timelines, and costs, so you know exactly what to expect.
+                </p>
+            </div>
+
+            <div class="p-6 border-2 border-primary-orange shadow-lg bg-white">
+                <span class="text-3xl text-center font-extrabold block mb-4">3</span>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Installation & Support</h3>
+                <p class="text-sm text-gray-700">
+                    Our certified team completes your project with precision and efficiency, keeping you informed every step of the way. After installation, we provide guidance and ongoing support.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="py-12 md:py-16 w-full">
+
+    <div class="bg-blue-800 py-8 sm:px-6 lg:px-8">
+        <div class="w-full mx-auto text-center">
+            <h2 class="text-lg font-bold text-white">
+                What Our Happy Customers Are Saying
+            </h2>
+            <p class="mt-1 text-lg text-white">
+                Discover why our clients trust us to keep their homes and businesses spotless.
+            </p>
+        </div>
+
+        <div class="mt-12 max-w-7xl mx-auto grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+            
+            <div class="bg-white p-6 rounded-lg shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex text-yellow-400">
+                        <i class="bx bxs-star text-yellow-400 text-xl"></i>
+                        <i class="bx bxs-star text-yellow-400 text-xl"></i>
+                        <i class="bx bxs-star text-yellow-400 text-xl"></i>
+                        <i class="bx bxs-star text-yellow-400 text-xl"></i>
+                        <i class="bx bxs-star text-yellow-400 text-xl"></i>
+                    </div>
+                    <p class="mt-4 text-gray-700 text-sm italic">
+                        "Had my private power pole replaced, they did an exceptional job. Competitive pricing, was well below the other quotes I got for the job. Great service!"
+                    </p>
+                </div>
+                <div class="flex items-center">
+                    <div>
+                        <img src="./assets/images/stephen.png" alt="Stephen Watts">
+                    </div>
+                    <div class="ml-3">
+                        <p class="text-sm font-semibold text-gray-900">Stephen Watts</p>
+                        <p class="text-sm font-bold">Private Power Pole Installation</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex text-yellow-400">
+                        <i class="bx bxs-star text-yellow-400 text-xl"></i>
+                        <i class="bx bxs-star text-yellow-400 text-xl"></i>
+                        <i class="bx bxs-star text-yellow-400 text-xl"></i>
+                        <i class="bx bxs-star text-yellow-400 text-xl"></i>
+                        <i class="bx bxs-star text-yellow-400 text-xl"></i>
+                    </div>
+                    <p class="mt-4 text-gray-700 text-sm italic">
+                        "Connor was very diligent in troubleshooting our outdoor low voltage lighting. No problem now, all resolved by Connor, he's a good troubleshooter."
+                    </p>
+                </div>
+                <div class="flex items-center">
+                    <div>
+                        <img src="./assets/images/dean.png" alt="Dean McKenzie">
+                    </div>
+                    <div class="ml-3">
+                        <p class="text-sm font-semibold text-gray-900">Dean McKenzie</p>
+                        <p class="text-sm font-bold">Outdoor Lighting</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex text-yellow-400">
+                        <i class="bx bxs-star text-yellow-400 text-xl"></i>
+                        <i class="bx bxs-star text-yellow-400 text-xl"></i>
+                        <i class="bx bxs-star text-yellow-400 text-xl"></i>
+                        <i class="bx bxs-star text-yellow-400 text-xl"></i>
+                        <i class="bx bxs-star text-yellow-400 text-xl"></i>
+                    </div>
+                    <p class="mt-4 text-gray-700 text-sm italic">
+                        "Connor and the team done an exceptional job at our property on a number of electrical tasks including the installation of downlights and ceiling fans."
+                    </p>
+                </div>
+                <div class="flex items-center">
+                    <div>
+                        <img src="./assets/images/daniel.png" alt="Daniel Pallifrone">
+                    </div>
+                    <div class="ml-3">
+                        <p class="text-sm font-semibold text-gray-900">Daniel Pallifrone</p>
+                        <p class="text-sm font-bold">Lighting & Ceiling Fans</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex text-yellow-400">
+                        <i class="bx bxs-star text-yellow-400 text-xl"></i>
+                        <i class="bx bxs-star text-yellow-400 text-xl"></i>
+                        <i class="bx bxs-star text-yellow-400 text-xl"></i>
+                        <i class="bx bxs-star text-yellow-400 text-xl"></i>
+                        <i class="bx bxs-star text-yellow-400 text-xl"></i>
+                    </div>
+                    <p class="mt-4 text-gray-700 text-sm italic">
+                        "Had my power short out, called after hours, they came out within the hour and had my power back up in no time! Reasonable pricing and knowledgeable tradesman. Great job mate."
+                    </p>
+                </div>
+                <div class="flex items-center">
+                    <div>
+                        <img src="./assets/images/deano.png" alt="Dean Orchard">
+                    </div>
+                    <div class="ml-3">
+                        <p class="text-sm font-semibold text-gray-900">Dean Orchard</p>
+                        <p class="text-sm font-bold">Emergency Call-Out</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <h3 class="text-2xl font-bold text-secondary-orange text-center">
+            Trusted Brands We Work With
+        </h3>
+        
+        <div class="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-4 items-center justify-items-center">
+            
+            <div>
+                <img src="./assets/images/sch.png" alt="schneider electric">
+            </div>
+            
+            <div>
+                <img src="./assets/images/hag.png" alt="Hager">
+            </div>
+            
+            <div>
+                <img src="./assets/images/cli.png" alt="CLIPSAL">
+            </div>
+            
+            <div>
+                <img src="./assets/images/nhb.png" alt="NHB">
+            </div>
+            
+        </div>
+    </div>
+
+</div>
+
+<!-- get in touch -->
+<div class="max-w-7xl mx-auto bg-secondary-orange py-7 px-4 mx-4 rounded-xl my-5">
+    <div class="flex flex-row justify-center md:gap-64 items-center max-w-6xl mx-auto">
+        
+        <h1 class="sm:text-xl md:text-3xl font-extrabold text-white text-center mb-6 md:mb-0">
+            Get in Touch with Electric Dreams<br class="hidden md:inline"> Electrical Today
+        </h1>
+        
+        <button class="bg-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 whitespace-nowrap"><a href="tel:+911234567890">
+            Call(+91)1234567890
+        </a></button>
+    </div>
+    </div>
+
+<!-- FAQ -->
+ <div class="max-w-4xl mx-auto py-12 sm:px-6">
+        <div class="text-center">
+            <h2 class="text-xl font-semibold text-gray-900">
+                Frequently Asked Questions
+            </h2>
+            <p class="mt-2 mb-4 font-bold text-gray-600">
+                Everything you need to know about our services.
+            </p>
+        </div>
+
+        <div class="space-y-6 max-w-2xl mx-auto">
+            
+            <div class="bg-gray-100 p-6 rounded-xl">
+                <h3 class="text-sm font-bold text-gray-900">Did you charge a call-out fee?</h3>
+                <p class="mt-2 text-sm text-gray-700">
+                    No! We offer a **\$0 callout fee During Business Hours**, so you only pay for the work we do—no hidden costs or surprises.
+                </p>
+            </div>
+
+            <div class="bg-gray-100 p-6 rounded-xl">
+                <h3 class="text-sm font-bold text-gray-900">Do you offer emergency electrical services?</h3>
+                <p class="mt-2 text-sm text-gray-700">
+                    Yes! We provide **24/7 emergency electrical repairs**, ensuring you get fast and reliable service when you need it most.
+                </p>
+            </div>
+
+            <div class="bg-gray-100 p-6 rounded-xl">
+                <h3 class="text-sm font-bold text-gray-900">Do you work with business and commercial properties?</h3>
+                <p class="mt-2 text-sm text-gray-700">
+                    Yes! We provide **comprehensive commercial electrical services**, including office fit-outs, lighting upgrades, and compliance testing.
+                </p>
+            </div>
+
+            <div class="bg-gray-100 p-6 rounded-xl">
+                <h3 class="text-sm font-bold text-gray-900">Are you licensed and insured?</h3>
+                <p class="mt-2 text-sm text-gray-700">
+                    Yes! Voltaic Electrical is **fully licensed and insured**, ensuring all work meets Australian safety standards.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+    </main>
+
+    <footer class="mx-auto w-full bg-secondary-orange pb-12 text-white mt-8">
+    <div class="container mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"> 
+            
+            <div class="sm:mx-0"> <div class="flex flex-col items-start mt-4 mb-6">
+                    <img src="./assets/images/companylogo.png" alt="Electric Dreams Logo" class="footer-logo">
+                    <span class="logo-text text-white font-semibold">Electric dreams</span>
+                </div>
+                <p class="sm:text-xs md:text-sm font-bold leading-relaxed">Voltaic: Electrical provides expert residential, commercial, and emergency electrical services across Perth.</p>
+                <div class="flex space-x-3 mt-2 text-2xl">
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-google'></i></a>
+                </div>
+            </div>
+            
+            <div class="sm:mx-0"> <h3 class="font-semibold sm:text-sm md:text-lg mt-6 mb-4">Services</h3>
+                <ul class="space-y-0 sm:text-xs md:text-sm font-bold">
+                    <li><a class="hover:underline hover:text-primary-orange">Lighting</a></li>
+                    <li><a class="hover:underline hover:text-primary-orange">Private Power Poles</a></li>
+                    <li><a class="hover:underline hover:-primary-orange">Smoke Alarms</a></li>
+                    <li><a href="#" class="hover:underline hover:text-primary-orange">EV Chargers</a></li>
+                    <li><a href="#" class="hover:underline hover:text-primary-orange">Air Conditioning</a></li>
+                    <li><a href="#" class="hover:underline hover:text-primary-orange">Thermographic Imaging</a></li>
+                    <li><a class="hover:underline hover:text-primary-orange">View All</a></li>
+                </ul>
+            </div>
+            
+            <div class="sm:mx-0"> <h3 class="font-semibold sm:text-sm md:text-lg mt-6 mb-4">Company</h3>
+                <ul class="space-y-0 sm:text-xs md:text-sm font-bold">
+                    <li><a class="hover:underline hover:text-primary-orange">About</a></li>
+                    <li><a class="hover:underline hover:text-primary-orange">Service Areas</a></li>
+                    <li><a class="hover:underline hover:text-primary-orange">Contact</a></li>
+                    <li><a class="hover:underline hover:text-primary-orange">Reviews</a></li>
+                    <li><a class="hover:underline hover:text-primary-orange">Resources</a></li>
+                    <li><a class="hover:underline hover:text-primary-orange">Sitemap</a></li>
+                </ul>
+            </div>
+            
+            <div class="sm:mx-0"> <h3 class="font-semibold sm:text-sm md:text-lg mt-6 mb-4">Get In Touch</h3>
+                <ul class="space-y-0 sm:text-xs md:text-sm font-bold">
+                    <li class="flex items-center"><i class='bx bx-map sm:text-lg md:text-xl mr-2'></i> Location, Chennai</li>
+                    <li class="flex items-center"><i class='bx bx-phone sm:text-lg md:text-xl mr-2'></i> (+91)1234567890</li>
+                    <li class="flex items-center"><i class='bx bx-envelope sm:text-lg md:text-xl mr-2'></i> Support @electricdreams.com</li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+<div id="cartModal" class="fixed inset-0 bg-gray-900 bg-opacity-30 flex justify-end z-50 hidden">
+    <div class="bg-white shadow-xl max-w-sm w-full mt-2 mr-4 rounded-3xl max-h-[90vh]">
+        
+        <div class="p-4 flex justify-between items-center sticky top-0 bg-white z-10">
+            <h2 class="text-lg font-bold text-gray-900">Cart</h2>
+            <button id="cartCloseButton" type="button" class="text-gray-500 hover:text-gray-700 p-1">
+                <i class='bx bx-x'></i>
+            </button>
+        </div>
+
+        <div class="p-4"> 
+            <p class="text-lg mb-2">Bulb/tubelight holder installation</p>
+            
+            <div class="flex gap-4 items-center mb-3">
+                <p class="text-lg">Add</p>
+                <div class="flex items-center border border-gray-300 rounded-md overflow-hidden">
+                    
+                    <button id="qtyMinus" type="button" class="w-7 h-7 bg-gray-300 hover:bg-gray-200 text-gray-700 text-md font-semibold flex items-center justify-center">-</button>
+                    <span id="qtyDisplay" class="w-7 h-7 text-center bg-gray-300 text-gray-900 flex items-center justify-center text-sm">1</span>
+                    <button id="qtyPlus" type="button" class="w-7 h-7 bg-gray-300 hover:bg-gray-200 text-gray-700 text-md font-semibold flex items-center justify-center">+</button>
+                </div>
+            </div>
+                
+                <div class="mb-2">
+                    <span class="text-sm text-gray-600 mr-1">Amount:</span>
+                    <span id="totalAmount" class="text-md font-bold text-gray-900">₹109</span>
+                </div>
+            
+
+            <div class="bg-orange-300 text-xs text-gray-700 text-center p-1 mb-4">
+                Add ₹<span id="amountRemaining">92</span> more to save on visitation fees
+            </div>
+
+            <button type="submit" class="w-full text-center py-2 rounded-full bg-secondary-orange hover:bg-white border hover:border-black hover:text-black  text-white font-semibold text-md shadow-md transition duration-150 ease-in-out"><a href="checkout.html" id="bookNowButton">
+                Book now
+            </a></button>
+        </div>
+
+        <div class="p-4 border-t border-gray-200">
+            <div class="flex border-2 border-black rounded-2xl p-2 items-start space-x-2">
+                <div class="flex-shrink-0 mt-1">
+                    <i class='bxr bx-discount'></i> 
+                </div>
+                <div>
+                    <p class="text-lg font-medium">Get visitation fees offer</p>
+                    <p class="text-sm mb-1">On orders above ₹200</p>
+                    <a id="viewOffersButton" href="#" class="text-xs text-orange-500 hover:text-gray-900 hover:bg-white hover:border-black border-transparent border transition duration-200">
+                        View more offers
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-4 border-t border-gray-200">
+            <div class="border-2 border-black rounded-2xl p-3">
+                <p class="font-semibold text-lg text-center mb-1">UC promise</p>
+                <ul class="text-xs text-gray-700 space-y-0.5">
+                    <li>✔ Verified professionals</li>
+                    <li>✔ Hassle free booking</li>
+                    <li>✔ Transparent pricing</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="./js/script.js"></script>
+</body>
+</html>
