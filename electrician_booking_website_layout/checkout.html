@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Dreams - Home</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="font-lato">
+
+    <header class="w-full">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <div class="flex flex-col items-center">
+                <img src="./assets/images/companylogo.png" alt="Electric Dreams Logo" class="logo-small">
+                <span class="logo-text text-secondary-orange font-semibold">Electric dreams</span>
+            </div>
+            <div class="m-4 items-center space-x-6">
+                <a href="tel:+911234567890" class="md:text-lg px-6 py-3 bg-primary-orange hover:bg-tertiary-orange text-white font-semibold rounded-full transition-colors duration-200 shadow-md">
+                    Call(+91)1234567890
+                </a>
+                <a href="#" class="md:text-lg py-3 btn-round-small border border-primary-orange text-primary-orange hover:bg-gray-50 font-semibold rounded-full transition-colors duration-200 bg-white">
+                    Book Now
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-secondary-orange py-2 px-4"> 
+            <div class="container mx-auto flex flex-row md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-8">
+                
+                <div class="relative md:w-64 order-1 md:order-none">
+                    <i class='bx bx-search text-gray-600 absolute left-3 top-1/2 -translate-y-1/2 rotate-90 text-xl'></i>
+                    <input type="text" placeholder="Search electricians" class="w-full font-bold pl-10 pr-4 py-2 rounded-full bg-white text-gray-800 focus:outline-none focus:ring-2 ring-focus-orange">
+                </div>
+                <nav class="py-3 order-2 md:order-none">
+                    <ul class="flex flex-wrap justify-center md:justify-between items-center text-white text-base font-semibold space-x-4 md:gap-3 sm:space-x-6">
+                        <li><a href="home.html" class="hover:text-gray-200 py-1">Home</a></li>
+                        <li><a href="services.html" class="hover:text-gray-200 py-1 flex items-center">Services <i class='bx bx-chevron-down text-lg ml-1'></i></a></li>
+                        <li><a href="emergency.html" class="hover:text-gray-200 py-1">Emergency electrician</a></li>
+                        <li><a href="about.html" class="hover:text-gray-200 py-1">About</a></li>
+                        <li><a href="contact.html" class="hover:text-gray-200 py-1">Contact</a></li>
+                        <li><a href="areas.html" class="hover:text-gray-200 py-1">Areas we services</a></li>
+                        <li><a href="account.html" class="hover:text-gray-200 py-1">Account</a></li>
+                        <li><a href="#" id="cartIcon" class="relative hover:text-gray-200 py-1 flex items-center">Cart<span class="text-primary-orange absolute -top-1 -right-4 inline-flex items-center justify-center h-4 w-4 text-xs font-bold bg-white rounded-full">1</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto p-4 md:p-8 mt-10">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
+            <div class="lg:col-span-2"> 
+            <div class="max-w-2xl bg-secondary-orange rounded-xl shadow-lg p-6 text-white h-fit">
+                
+                <div class="flex items-start border-b border-white pb-4 mb-4">
+                    <div class="bg-white p-3 rounded-lg mr-4">
+                        <img src="./assets/images/bulb-holder.png" alt="Bulb holder" class="w-12 h-12 object-contain">
+                    </div>
+                    <div>
+                        <p class="font-bold text-lg">Bulb/tubelight holder installation</p>
+                        <p class="text-sm">Light quantity: 1</p>
+                        <p class="text-sm">Amount: ₹109</p>
+                    </div>
+                </div>
+
+                <div class="space-y-2 mb-6">
+                    <p class="text-lg font-bold">Payment summary</p>
+                    <div class="flex justify-between text-sm">
+                        <span>Item total</span>
+                        <span>₹109</span>
+                    </div>
+                    <div class="flex justify-between text-sm">
+                        <span>Visitation fees</span>
+                        <span>₹60</span>
+                    </div>
+                    <div class="flex justify-between text-sm border-b border-white pb-2">
+                        <span>Taxes and fees</span>
+                        <span>₹19</span>
+                    </div>
+                    <div class="flex justify-between text-sm border-b border-white pb-2">
+                        <span>Total Amount</span>
+                        <span>₹188</span>
+                    </div>
+                    <div class="flex justify-between text-sm">
+                        <span>Amount to pay</span>
+                        <span>₹188</span>
+                    </div>
+                </div>
+
+                <div class="flex justify-between text-xl font-semibold pt-4">
+                    <button type="button" class="hover:text-gray-200 transition">Delete</button>
+                    <button type="button" class="hover:text-gray-200 transition">Proceed</button>
+                </div>
+                
+            </div>
+            <div class="mt-8 pt-6">
+    <p class="text-lg font-bold text-gray-800 mb-4">Select Service Date</p>
+    
+    <div 
+        id="date-trigger" 
+        class="w-48 p-3 border border-gray-300 rounded-lg flex items-center justify-start cursor-pointer hover:border-primary-orange transition"
+        
+        onclick="openCalendarModal()"
+    >
+        <i class="bx bxs-calendar text-xl text-gray-600 mr-2"></i>
+        
+        <span id="date-display" class="text-gray-600">DD/MM/YY</span>
+    </div>
+</div>
+            </div>
+                <div class="lg:col-span-3 bg-white p-12 border-2 border-gray-600 rounded-xl shadow-lg">
+                <form id="checkout-form" method="POST" class="space-y-8">
+                    
+                    <div class="space-y-4">
+                        <p class="text-lg font-bold text-gray-800">Customer details</p>
+                        
+                        <div class="flex flex-wrap -mx-2">
+                            <div class="w-1/2 px-2 mb-4">
+                                <label for="first-name" class="block text-sm font-medium text-gray-700">First Name</label>
+                                <input type="text" id="first-name" placeholder="First Name" class="w-full mt-1 p-3 border border-gray-900 rounded-lg focus:ring-primary-orange focus:border-primary-orange">
+                            </div>
+                            <div class="w-1/2 px-2 mb-4">
+                                <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
+                                <input type="text" id="last-name" placeholder="Last Name" class="w-full mt-1 p-3 border border-gray-900 rounded-lg focus:ring-primary-orange focus:border-primary-orange">
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap -mx-2">
+                            <div class="w-1/2 px-2 mb-4">
+                                <label for="email-id" class="block text-sm font-medium text-gray-700">Email address</label>
+                                <input type="email" id="email-id" placeholder="Email id" class="w-full mt-1 p-3 border border-gray-900 rounded-lg focus:ring-primary-orange focus:border-primary-orange">
+                            </div>
+                            <div class="w-1/2 px-2 mb-4">
+                                <label for="phone-number" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                                <input type="tel" id="phone-number" placeholder="Phone number" class="w-full mt-1 p-3 border border-gray-900 rounded-lg focus:ring-primary-orange focus:border-primary-orange">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="address" class="block text-sm font-medium text-gray-700">Address</label>
+                            <textarea id="address" placeholder="Address" rows="3" class="w-full mt-1 p-3 border border-gray-900 rounded-lg focus:ring-primary-orange focus:border-primary-orange"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4 pt-4">
+                        <p class="text-lg font-bold text-gray-800">Payment Details</p>
+
+                        <button type="button" id="upiButton" class="w-full h-12 mx-auto p-3 border border-gray-300 rounded-lg flex items-center justify-center transition duration-150">
+                            <span>Pay with UPI</span>
+                            <img src="./assets/images/upi-logo.png" alt="UPI" class="px-2">
+                        </button>
+                        
+                        <button type="button" id="netButton" class="w-full h-12 mx-auto p-3 border border-gray-300 rounded-lg flex items-center justify-center transition duration-150">
+                            <span>Pay with NET Banking</span>
+                            <img src="./assets/images/net-banking-logo.png" alt="Net Banking" class="px-2">
+                        </button>
+
+                        <button type="button" id="cardButton" class="w-full h-12 mx-auto p-3 border border-gray-300 rounded-lg flex items-center justify-center transition duration-150">
+                            <span>Pay with Card</span>
+                            <img src="./assets/images/visa-card-logo.png" alt="Visa Card" class="px-2">
+                        </button>
+                    </div>
+
+                    <div class="text-center pt-2">
+                        <button id="paynowbtn"
+                            type="submit" 
+                            class="w-full md:w-64 py-1 rounded-full bg-primary-orange hover:bg-primary-orange-dark text-white font-semibold text-lg shadow-md transition duration-150 ease-in-out"
+                        >
+                            Pay Now
+                        </button>
+                    </div>
+                </form>
+
+                
+
+            </div>
+        </div>
+    </div>
+    <footer class="mx-auto w-full bg-secondary-orange pb-12 text-white mt-8">
+    <div class="container mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"> 
+            
+            <div class="sm:mx-0"> <div class="flex flex-col items-start mt-4 mb-6">
+                    <img src="./assets/images/companylogo.png" alt="Electric Dreams Logo" class="footer-logo">
+                    <span class="logo-text text-white font-semibold">Electric dreams</span>
+                </div>
+                <p class="sm:text-xs md:text-sm font-bold leading-relaxed">Voltaic: Electrical provides expert residential, commercial, and emergency electrical services across Perth.</p>
+                <div class="flex space-x-3 mt-2 text-2xl">
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-google'></i></a>
+                </div>
+            </div>
+            
+            <div class="sm:mx-0"> <h3 class="font-semibold sm:text-sm md:text-lg mt-6 mb-4">Services</h3>
+                <ul class="space-y-0 sm:text-xs md:text-sm font-bold">
+                    <li><a class="hover:underline hover:text-primary-orange">Lighting</a></li>
+                    <li><a class="hover:underline hover:text-primary-orange">Private Power Poles</a></li>
+                    <li><a class="hover:underline hover:-primary-orange">Smoke Alarms</a></li>
+                    <li><a href="#" class="hover:underline hover:text-primary-orange">EV Chargers</a></li>
+                    <li><a href="#" class="hover:underline hover:text-primary-orange">Air Conditioning</a></li>
+                    <li><a href="#" class="hover:underline hover:text-primary-orange">Thermographic Imaging</a></li>
+                    <li><a class="hover:underline hover:text-primary-orange">View All</a></li>
+                </ul>
+            </div>
+            
+            <div class="sm:mx-0"> <h3 class="font-semibold sm:text-sm md:text-lg mt-6 mb-4">Company</h3>
+                <ul class="space-y-0 sm:text-xs md:text-sm font-bold">
+                    <li><a class="hover:underline hover:text-primary-orange">About</a></li>
+                    <li><a class="hover:underline hover:text-primary-orange">Service Areas</a></li>
+                    <li><a class="hover:underline hover:text-primary-orange">Contact</a></li>
+                    <li><a class="hover:underline hover:text-primary-orange">Reviews</a></li>
+                    <li><a class="hover:underline hover:text-primary-orange">Resources</a></li>
+                    <li><a class="hover:underline hover:text-primary-orange">Sitemap</a></li>
+                </ul>
+            </div>
+            
+            <div class="sm:mx-0"> <h3 class="font-semibold sm:text-sm md:text-lg mt-6 mb-4">Get In Touch</h3>
+                <ul class="space-y-0 sm:text-xs md:text-sm font-bold">
+                    <li class="flex items-center"><i class='bx bx-map sm:text-lg md:text-xl mr-2'></i> Location, Chennai</li>
+                    <li class="flex items-center"><i class='bx bx-phone sm:text-lg md:text-xl mr-2'></i> (+91)1234567890</li>
+                    <li class="flex items-center"><i class='bx bx-envelope sm:text-lg md:text-xl mr-2'></i> Support @electricdreams.com</li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+    
+<div id="calendar-modal" class="fixed inset-0 bg-gray-900 bg-opacity-70 flex justify-center items-center z-50 hidden">
+    <div class="bg-white p-6 rounded-xl shadow-2xl max-w-xs w-full">
+        <div class="flex justify-between items-center mb-4">
+            <h3 id="selected-day-display" class="text-xl font-bold text-deep-blue"></h3>
+            <button onclick="closeCalendarModal()" class="text-gray-500 hover:text-gray-700 p-1">
+                <i class='bx bx-x text-2xl'></i>
+            </button>
+        </div>
+        
+        <div class="flex justify-between items-center mb-4">
+            <button onclick="changeMonth(-1)" class="p-2 hover:bg-gray-100 rounded-full transition-colors">
+                <i class='bx bx-chevron-left'></i>
+            </button>
+            <span id="month-year-display" class="font-semibold text-lg"></span>
+            <button onclick="changeMonth(1)" class="p-2 hover:bg-gray-100 rounded-full transition-colors">
+                <i class='bx bx-chevron-right'></i>
+            </button>
+        </div>
+
+        <div class="grid grid-cols-7 text-xs font-medium text-gray-500 mb-2">
+            <div class="text-center">Mon</div><div class="text-center">Tue</div><div class="text-center">Wed</div><div class="text-center">Thu</div><div class="text-center">Fri</div><div class="text-center">Sat</div><div class="text-center">Sun</div>
+        </div>
+
+        <div id="calendar-grid" class="grid grid-cols-7 gap-2 text-sm">
+            </div>
+
+        <button onclick="selectDate()" class="w-full mt-6 py-2 bg-primary-orange hover:bg-tertiary-orange text-white font-semibold rounded-full transition duration-150">
+            Confirm Selection
+        </button>
+    </div>
+</div>
+
+<!-- paynow modal -->
+<div 
+    id="payment-success-modal" 
+    class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 transition-opacity duration-300 hidden"
+>
+    <div class="bg-white rounded-xl shadow-2xl p-8 max-w-sm w-full text-center transform transition-transform duration-300 scale-95 md:scale-100">
+        
+        <div class="mb-6">
+            <div class="w-20 h-20 mx-auto bg-orange-600 rounded-full flex items-center justify-center relative">
+                
+                <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
+                
+                </div>
+        </div>
+        
+        <h2 class="text-2xl font-bold text-gray-900 mb-2">
+            Payment completed
+        </h2>
+        
+        <p class="text-base text-red-600 mb-6">
+            Thank you for choosing our electrician services<br>
+            We will Contact you soon
+        </p>
+        
+        <button 
+            onclick="closeSuccessModal()"
+            class="py-2 px-8 rounded-full bg-orange-600 hover:bg-orange-700 text-white font-semibold transition duration-150 ease-in-out shadow-md"
+        >
+            Back
+        </button>
+        
+    </div>
+</div>
+    <script src="./js/script.js"></script>
+    </body>
+</html>
